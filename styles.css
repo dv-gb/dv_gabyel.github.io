@@ -107,8 +107,8 @@ header {
     top: 90px;
     height: 0;
     width: 350px;
-    background:  #918c9b67;
-    backdrop-filter: blur(3px);
+    background:  #6a67708c;
+    backdrop-filter: blur(4px);
     border-radius: 10px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -198,15 +198,15 @@ section.hero {
 
 @media (max-width: 992px) {
     .hero-left p {
-        font-size: 20px;
+        font-size: 10px;
     }
 
     .hero-left h1 {
-        font-size: 60px;
+        font-size: 40px;
     }
 
     .hero-left h2 {
-        font-size: 40px;
+        font-size: 20px;
     }
 }
 
