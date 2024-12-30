@@ -5,7 +5,6 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-
 .hero-right {
     flex: 1;
     background-color: rgb(35, 194, 114);
@@ -88,6 +87,7 @@ header {
 @media (max-width: 992px) {
     .navbar #logo a{
         font-size: 2rem;
+        left: 0%;
     }
 }
 
@@ -130,9 +130,11 @@ header {
 
 .navbar .toggle_btn{
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
     display: none;
+    position: relative;
+    top: 10px;
 }
 
 
@@ -193,47 +195,59 @@ section.hero {
     font-size: 3rem;
     margin-bottom: 1rem;
     position: relative;
-    bottom: -10%;
+    bottom: 10%;
 }
 
 @media (max-width: 992px) {
     .hero-left p {
-        font-size: 10px;
+        font-size: 15px;
+        position: relative;
+        bottom: -4%;
     }
 
     .hero-left h1 {
-        font-size: 40px;
+        font-size: 50px;
+        position: relative;
+        bottom: 0%;
     }
 
     .hero-left h2 {
-        font-size: 20px;
+        font-size: 30px;
+        position: relative;
+        bottom: -4%;
     }
 }
 
 
-.hero-right::after {
-    content: "Contact Me";
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    font-size: 1.2rem;
-    color: #242424;
-    position: absolute;
-    right: 10px;
-    bottom: 37%;
-    font-weight: bold;
-}
+
 
 .linkss {
-    font-size: 1.8em;
+    font-size: 2em;
     cursor: pointer;
     writing-mode: vertical-lr;
     position: absolute;
     right: 1%;
-    top: 33%;
+    top: 40%;
     text-decoration: none;
+    margin: 0;
 }
 
 .linkss i{
     color: #232027;
+    font-size: larger;
+}
+
+@media (max-width: 992px) {
+    .linkss i {
+        font-size: 100px;
+        position: relative;
+        top: -25%;
+        left: -55px;
+
+    }
+
+    .hero-right {
+        padding-right: 200px;
+    }
 }
 
