@@ -86,7 +86,7 @@ header {
 
 @media (max-width: 992px) {
     .navbar #logo a{
-        font-size: 2rem;
+        font-size: 1.5rem;
         left: 0%;
     }
 }
