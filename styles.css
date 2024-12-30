@@ -224,7 +224,7 @@ section.hero {
 .linkss {
     position: fixed;
     right: 1%;
-    top: 40%;
+    top: 45%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -241,14 +241,23 @@ section.hero {
     transition: color 0.3s;
 }
 
-.linkss i:hover {
-    color: rgb(78, 83, 180);
+.linkss .git i:hover {
+    color: rgb(216, 107, 80);
+}
+
+.linkss .fb i:hover {
+    color: rgb(0, 110, 255);
+}
+
+.linkss .in i:hover {
+    color: rgb(17, 33, 124);
 }
 
 @media (max-width: 992px) {
     .linkss {
         right: 5%;
         gap: 15px;
+        top: 37%;
     }
 
     .linkss i {
