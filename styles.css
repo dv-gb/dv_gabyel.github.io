@@ -218,16 +218,29 @@ section.hero {
     }
 }
 
+@media (max-width: 992px) {
+    .hero-right {
+        width: 70% !important; 
+        max-width: 0px; 
+        margin: 0 auto;
+    }
+}
 
+@media (max-width: 700px) {
+    .hero-right {
+        width: 0% !important; 
+        max-width: 0px; 
+    }
+}
 
 
 .linkss {
     position: fixed;
     right: 1%;
-    top: 45%;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    top: 45%;
     align-items: center;
     font-size: 2em;
     text-decoration: none;
@@ -261,10 +274,33 @@ section.hero {
     }
 
     .linkss i {
-        font-size: 3em;
+        font-size: 4em;
     }
 
     .hero-right {
         padding-right: 50px;
     }
+}
+
+@media (max-width: 992px) {
+  .linkss {
+    position: fixed ; 
+    right: 10px; 
+    top: auto;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    font-size: 2em;
+    text-decoration: none;
+    margin: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+    .linkss i {
+        font-size: 1em;
+    }
+
 }
