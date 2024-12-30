@@ -8,7 +8,7 @@
 
 .hero-right {
     flex: 1;
-    background-color: rgb(35, 194, 114); /* Match green shade */
+    background-color: rgb(35, 194, 114);
     justify-content: center;
     align-items: center;
     position: relative;
@@ -85,11 +85,19 @@ header {
     text-decoration: none;
 }
 
+@media (max-width: 992px) {
+    .navbar #logo a{
+        font-size: 2rem;
+    }
+}
+
 
 
 .navbar .links {
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
+    position: relative;
+    right: 9%;
 }
 
 #dropdown_menu {
@@ -98,7 +106,7 @@ header {
     right: 2rem;
     top: 90px;
     height: 0;
-    width: 300px;
+    width: 350px;
     background:  #918c9b67;
     backdrop-filter: blur(3px);
     border-radius: 10px;
@@ -115,7 +123,7 @@ header {
 }
 
 #dropdown_menu.open {
-    height: 240px;
+    height: 260px;
 }
 
 
@@ -127,7 +135,7 @@ header {
     display: none;
 }
 
-/* responsive navbar */
+
 @media (max-width: 992px) {
     .navbar .links {
         display: none;
@@ -148,16 +156,16 @@ header {
     }
 }
 
-/* Hero Section Background Split */
+
 section.hero {
     display: flex;
-    height: calc(100vh - 120px); /* Full height minus navbar */
+    height: calc(100vh - 120px);
 }
 
 
 .hero-left {
     flex: 1;
-    background-color: #232027; /* Match dark shade */
+    background-color: #232027; 
     padding: 10% 5%;
     display: flex;
     flex-direction: column;
@@ -169,7 +177,7 @@ section.hero {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24px;
     color: rgb(35, 194, 114);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     position: relative;
     bottom: 10%;
 }
@@ -188,9 +196,21 @@ section.hero {
     bottom: -10%;
 }
 
+@media (max-width: 992px) {
+    .hero-left p {
+        font-size: 20px;
+    }
+
+    .hero-left h1 {
+        font-size: 60px;
+    }
+
+    .hero-left h2 {
+        font-size: 40px;
+    }
+}
 
 
-/* Vertical Text */
 .hero-right::after {
     content: "Contact Me";
     writing-mode: vertical-rl;
