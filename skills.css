@@ -409,7 +409,7 @@ p .second {
     overflow: hidden;
   }
 
-  @media (max-width: 992px) {
+@media (max-width: 1080px) {
     .skillset p {
         font-size: 20px;
         margin: auto;
@@ -422,7 +422,7 @@ p .second {
     }
 
     .skillset {
-        padding-left: 30px;
+        padding-left: 50px;
         padding-bottom: 25px;
     }
 
@@ -451,9 +451,205 @@ p .second {
 
 .icons {
     left: 50%;
+    padding-left: 70px;
 }
 
 }
+
+@media (max-width: 1094px) {
+    .skillset p {
+        font-size: 20px;
+        margin: auto;
+        padding-bottom: 60px;
+    }
+    
+    .skills {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .skillset {
+        padding-left: 250px;
+        padding-bottom: 25px;
+    }
+
+.html-icon,
+.css-icon,
+.js-icon,
+.py-icon
+{
+    height: 90px;
+    width: 90px;
+    margin-bottom: 85px; 
+}
+
+.sql-icon {
+    height: 100px;
+    width: 100px;
+    margin-top: 45px; 
+}
+
+.java-icon {
+    height: 100px;
+    width: 170px;
+    padding-top: 0;
+    margin-bottom: 39px; 
+}
+
+.icons {
+    left: 50%;
+    padding-left: 150px;
+}
+
+}
+
+
+   
+
+@media (max-width: 1000px) {
+    .skillset p {
+        font-size: 20px;
+        margin: auto;
+        padding-bottom: 60px;
+    }
+    
+    .skills {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+
+    .skillset {
+        padding-left: 130px;
+        padding-bottom: 25px;
+    }
+
+.html-icon,
+.css-icon,
+.js-icon,
+.py-icon
+{
+    height: 90px;
+    width: 90px;
+    margin-bottom: 85px; 
+}
+
+.sql-icon {
+    height: 100px;
+    width: 100px;
+    margin-top: 45px; 
+}
+
+.java-icon {
+    height: 100px;
+    width: 170px;
+    padding-top: 0;
+    margin-bottom: 39px; 
+}
+
+.icons {
+    left: 50%;
+    padding-left: 100px;
+}
+
+}
+
+@media (max-width: 600px) {
+    .skillset p {
+        font-size: 20px;
+        margin: auto;
+        padding-bottom: 60px;
+    }
+    
+    .skills {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+
+    .skillset {
+        padding-left: 40px;
+        padding-bottom: 25px;
+    }
+
+.html-icon,
+.css-icon,
+.js-icon,
+.py-icon
+{
+    height: 90px;
+    width: 90px;
+    margin-bottom: 85px; 
+}
+
+.sql-icon {
+    height: 100px;
+    width: 100px;
+    margin-top: 45px; 
+}
+
+.java-icon {
+    height: 100px;
+    width: 170px;
+    padding-top: 0;
+    margin-bottom: 39px; 
+}
+
+.icons {
+    left: 50%;
+    padding-left: 0px;
+}
+
+}
+
+@media (max-width: 500px) {
+    .skillset p {
+        font-size: 20px;
+        margin: auto;
+        padding-bottom: 60px;
+    }
+    
+    .skills {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+
+    .skillset {
+        padding-left: 40px;
+        padding-bottom: 25px;
+    }
+
+.html-icon,
+.css-icon,
+.js-icon,
+.py-icon
+{
+    height: 90px;
+    width: 90px;
+    margin-bottom: 85px; 
+}
+
+.sql-icon {
+    height: 100px;
+    width: 100px;
+    margin-top: 45px; 
+}
+
+.java-icon {
+    height: 100px;
+    width: 170px;
+    padding-top: 0;
+    margin-bottom: 39px; 
+}
+
+.icons {
+    left: 50%;
+    padding-left: 0px;
+}
+}
+
+
 
 #myBtn {
     display: none; 
@@ -487,7 +683,7 @@ p .second {
     display: none; 
     position: fixed;
     bottom: 40px;
-    right: 420px;
+    right: 50px;
     z-index: 99;
     border: none;
     outline: none;
