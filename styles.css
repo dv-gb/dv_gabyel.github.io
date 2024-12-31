@@ -31,7 +31,6 @@ a {
     font-size: 2rem;
     transition: color 0.3s ease, text-decoration 0.3s ease;
     bottom: -10px;
-
 }
 
 a::after {
@@ -53,7 +52,7 @@ a::after {
     width: 100%;
 }
 
-/* HEADER */
+
 header {
     padding: 0;
     margin: 0;
@@ -72,7 +71,6 @@ header {
     justify-content: space-between;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     z-index: 5;
-    
 }
 
 .navbar #logo a{
@@ -90,6 +88,8 @@ header {
         left: 0%;
     }
 }
+
+
 
 
 
@@ -242,28 +242,29 @@ section.hero {
     gap: 20px;
     top: 45%;
     align-items: center;
-    font-size: 2em;
-    text-decoration: none;
-    margin: 0;
+    text-decoration: none;  
     cursor: pointer;
 }
 
 .linkss i {
     color: #232027;
     font-size: larger;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.2s ease; 
 }
 
 .linkss .git i:hover {
     color: rgb(216, 107, 80);
+    transform: scale(1.3);
 }
 
 .linkss .fb i:hover {
     color: rgb(0, 110, 255);
+    transform: scale(1.3);
 }
 
 .linkss .in i:hover {
     color: rgb(17, 33, 124);
+    transform: scale(1.3);
 }
 
 @media (max-width: 992px) {
