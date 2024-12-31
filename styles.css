@@ -21,7 +21,6 @@
     .profilepic {
         display: none;
     }
-    
 }
 
 .hero-right {
@@ -75,7 +74,6 @@ a::after {
     width: 100%;
 }
 
-
 header {
     padding: 0;
     margin: 0;
@@ -112,10 +110,6 @@ header {
     }
 }
 
-
-
-
-
 .navbar .links {
     display: flex;
     gap: 4rem;
@@ -149,8 +143,6 @@ header {
     height: 260px;
 }
 
-
-
 .navbar .toggle_btn{
     color: #fff;
     font-size: 2rem;
@@ -160,11 +152,10 @@ header {
     top: 10px;
 }
 
-
 @media (max-width: 992px) {
     .navbar .links {
         display: none;
-}
+    }
     .navbar .toggle_btn {
         display: block;
     }
@@ -181,12 +172,10 @@ header {
     }
 }
 
-
 section.hero {
     display: flex;
     height: calc(100vh - 120px);
 }
-
 
 .hero-left {
     flex: 1;
@@ -256,7 +245,6 @@ section.hero {
     }
 }
 
-
 .linkss {
     position: absolute;
     display: flex;
@@ -306,26 +294,23 @@ section.hero {
 }
 
 @media (max-width: 992px) {
-  .linkss {
-    position: fixed ; 
-    right: 10px; 
-    top: auto;
-    bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    font-size: 2em;
-    text-decoration: none;
-    margin: 0;
-    cursor: pointer;
-    z-index: 10;
-}
+    .linkss {
+        position: fixed ; 
+        right: 10px; 
+        top: auto;
+        bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        font-size: 2em;
+        text-decoration: none;
+        margin: 0;
+        cursor: pointer;
+        z-index: 10;
+    }
 
     .linkss i {
         font-size: 1em;
     }
-
 }
-
-
