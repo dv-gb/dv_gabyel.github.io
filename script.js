@@ -29,3 +29,36 @@ function scrollFunction() {
 function topFunction() {
     window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+
+const skillBars = document.querySelectorAll('.skills');
+
+
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
+}
+
+
+function handleScroll() {
+    skillBars.forEach(skill => {
+        if (isInViewport(skill)) {
+            skill.style.width = skill.dataset.width; 
+        }
+    });
+}
+
+
+skillBars.forEach(skill => {
+    const width = skill.classList.contains('html') ? '60%' :
+                  skill.classList.contains('css') ? '30%' :
+                  skill.classList.contains('js') ? '10%' :
+                  skill.classList.contains('python') ? '20%' :
+                  skill.classList.contains('java') ? '65%' :
+                  skill.classList.contains('sql') ? '40%' : '0%';
+    skill.dataset.width = width; 
+    skill.style.width = '0'; 
+});
+
+
+window.addEventListener('scroll', handleScroll);
