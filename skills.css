@@ -15,6 +15,7 @@
     z-index: 100;
     top: 135px;
     object-fit: contain; 
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.3));
 }
 
 @media (max-width: 992px) {
@@ -244,16 +245,11 @@ p .second {
         width: 70% !important; 
         max-width: 0px; 
         margin: 0 auto;
-        height: 2400px;
+        height: 2190px;
     }
 }
 
-@media (max-width: 700px) {
-    .hero-right {
-        width: 0% !important; 
-        max-width: 0px; 
-    }
-}
+
 
 
 .linkss {
@@ -509,7 +505,7 @@ p .second {
 
     .skillset {
         padding-left: 250px;
-        padding-bottom: 25px;
+        padding-bottom: 150px;
     }
 
 .html-icon,
@@ -752,7 +748,7 @@ p .second {
 
     .skillset {
         padding-left: 40px;
-        padding-bottom: 25px;
+        padding-bottom: 150px;
     }
 
 .html-icon,
@@ -818,7 +814,7 @@ p .second {
     display: none; 
     position: fixed;
     bottom: 40px;
-    right: 50px;
+    right: 60px;
     z-index: 99;
     border: none;
     outline: none;
