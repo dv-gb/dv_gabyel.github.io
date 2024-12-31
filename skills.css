@@ -349,7 +349,7 @@ p .second {
 
 .skillset {
     padding-top: 100px;
-    padding-left: 350px;
+    padding-left: 320px;
     border-radius: 1em;
     border: #fff;
     padding-bottom: 100px;
@@ -365,10 +365,10 @@ p .second {
 }
 
 .skills {
-    text-align: right;
+    text-align: right; 
     padding-top: 20px; 
-    padding-bottom: 20px; 
-    color: white;
+    padding-bottom: 20px;
+    color: white; 
 
   }
 
@@ -377,7 +377,7 @@ p .second {
     text-align: center;
     width: 50%; 
     background-color: #ddd; 
-    border: 2px solid #ffffff; 
+    border: 2px solid #ffffff;
     border-radius: 2px; 
   }
 
@@ -385,31 +385,33 @@ p .second {
     .skillset p {
         font-size: 20px;
         margin: auto;
+        padding-bottom: 60px;
     }
 
     .skillset {
         padding-left: 50px;
+        padding-bottom: 25px;
     }
 
-    .html-icon,
+.html-icon,
 .css-icon,
 .js-icon,
 .py-icon
 {
-    height: 130px;
-    width: 130px;
-    margin-bottom: 85px; 
+    height: 100px;
+    width: 100px;
+    margin-bottom: 95px; 
 }
 
 .sql-icon {
-    height: 130px;
-    width: 130px;
+    height: 100px;
+    width: 100px;
     margin-top: 45px; 
 }
 
 .java-icon {
-    height: 150px;
-    width: 230px;
+    height: 120px;
+    width: 190px;
     margin-bottom: 58px; 
 }
 
@@ -420,7 +422,7 @@ p .second {
 }
 
 #myBtn {
-    display: none; /* Start hidden */
+    display: none; 
     position: fixed;
     bottom: 40px;
     right: 40px;
