@@ -365,20 +365,20 @@ p .second {
 }
 
 .skills {
-    text-align: right; /* Right-align text */
-    padding-top: 20px; /* Add top padding */
-    padding-bottom: 20px; /* Add bottom padding */
-    color: white; /* White text color */
+    text-align: right;
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    color: white;
 
   }
 
 .container {
     justify-content: center;
     text-align: center;
-    width: 50%; /* Full width */
-    background-color: #ddd; /* Grey background */
-    border: 2px solid #ffffff; /* Black solid border with 2px width */
-    border-radius: 2px; /* Rounded corners */
+    width: 50%; 
+    background-color: #ddd; 
+    border: 2px solid #ffffff; 
+    border-radius: 2px; 
   }
 
   @media (max-width: 992px) {
