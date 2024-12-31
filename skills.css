@@ -307,12 +307,9 @@ p .second {
 
 }
 
-.html {width: 60%; background-color: #04AA6D;} 
-.css {width: 30%; background-color: #2196F3;} 
-.js {width: 10%; background-color: #f44336;} 
-.python {width: 20%; background-color: #f5f243;} 
-.java {width: 65%; background-color: #0fad44;} 
-.sql {width: 40%; background-color: #f1753c;} 
+
+
+
 
 .icons {
     writing-mode: vertical-lr;
@@ -369,8 +366,18 @@ p .second {
     padding-top: 20px; 
     padding-bottom: 20px;
     color: white; 
-
+    width: 0;
+    transition: width 1.3s ease-in-out;
+    overflow: hidden;
   }
+
+
+  .html {background-color: #04AA6D; width: 60%;} 
+  .css {background-color: #2196F3; width: 30%;} 
+  .js {background-color: #f44336; width: 10%;} 
+  .python {background-color: #000000; color: black; width: 20%;} 
+  .java {background-color: #0fad44; width: 65%;} 
+  .sql {background-color: #f1753c; width: 40%;}
 
 .container {
     justify-content: center;
@@ -379,6 +386,7 @@ p .second {
     background-color: #ddd; 
     border: 2px solid #ffffff;
     border-radius: 2px; 
+    overflow: hidden;
   }
 
   @media (max-width: 992px) {
