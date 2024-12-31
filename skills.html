@@ -1,101 +1,700 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="icon" href="icon.png">
-    <link rel="stylesheet" href="skills.css">
-    <title>Skills | Gabriel Guban</title>
-</head>
-<body>
-    <img src="ako/me3.png" alt="profile" class="profilepic">
-    <header>
-        <div class="navbar">
-            <div id="logo"><a href="index.html">GABYEL</a></div>
-            <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-            </ul>
-            <div class="toggle_btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </div>
-        <div id="dropdown_menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-        </div>
-    </header>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
 
-    <main>
-        <section class="hero">
-            <div class="hero-left">
-                <p>
-                    SKILLS I <span class="second">GAINED AND LEARNED</span> <span class="third">IN MY COURSE AND SELF-STUDY.</span>
-                </p>
-            </div>
-            <div class="hero-right">
-                <div class="linkss">
-                    <section class="git">
-                        <a href="https://github.com/dv-gb" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </section>
-                    <section class="fb">
-                        <a href="https://web.facebook.com/gab.guban/" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                    </section>
-                    <section class="in">
-                        <a href="https://www.linkedin.com/in/gab-guban-474237334/" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </section>
-                </div>
-            </div>
-        </section>
-    </main>
+.profilepic {
+    margin: auto;
+    padding-bottom: 0;
+    position: absolute;
+    height: 1000px; 
+    width: 600px; 
+    right: 20%;
+    z-index: 100;
+    top: 135px;
+    object-fit: contain; 
+}
 
-    <div class="skillset">
-        <div class="icons">
-            <img src="icons/html.png" alt="html" class="html-icon">
-            <img src="icons/css.png" alt="css" class="css-icon">
-            <img src="icons/js.png" alt="javascript" class="js-icon">
-            <img src="icons/python.png" alt="python" class="py-icon">
-            <img src="icons/java.png" alt="java" class="java-icon">
-            <img src="icons/mysqls.png" alt="mysql" class="sql-icon">
-        </div>
-        <p>HTML</p>
-        <div class="container">
-            <div class="skills html"></div>        
-        </div>
-        <p>CSS</p>
-        <div class="container">
-            <div class="skills css"></div>
-        </div>
-        <p>JavaScript</p>
-        <div class="container">
-            <div class="skills js"></div>
-        </div>
-        <p>Python</p>
-        <div class="container">
-            <div class="skills python"></div>
-        </div>
-        <p>Java</p>
-        <div class="container">
-            <div class="skills java"></div>
-        </div>
-        <p>MySQL</p>
-        <div class="container">
-            <div class="skills sql"></div>
-        </div>
-    </div>
+@media (max-width: 1100px) {
+    .profilepic {
+        display: none;
+    }
+    
+}
 
-    <button id="myBtn" onclick="topFunction()">▲</button>
-    <script src="script.js"></script>
-</body>
-</html>
+
+.hero-right {
+    flex: 1;
+    background-color: rgb(35, 194, 114);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: block;
+    z-index: 3;
+}
+
+body {
+    position: relative;
+    background-color: #232027;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    font-size: 2rem;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    bottom: -10px;
+
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background: rgb(243, 178, 37);
+    transition: width 0.3s ease;
+}
+
+.links a:hover {
+    color: rgb(243, 178, 37);
+}
+
+.links a:hover::after{
+    width: 100%;
+}
+
+
+header {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: rgba(116, 113, 113, 0.192);
+    position: relative;
+    height: 120px;
+    width: 100%;
+    padding: 2.5rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 5;
+    
+}
+
+.navbar #logo a{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    right: -50px;
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .navbar #logo a{
+        font-size: 1.5rem;
+        left: 0%;
+    }
+}
+
+
+
+
+
+.navbar .links {
+    display: flex;
+    gap: 4rem;
+    position: relative;
+    right: 9%;
+}
+
+#dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 90px;
+    height: 0;
+    width: 350px;
+    background:  #6a67708c;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 5;
+}
+
+#dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dropdown_menu.open {
+    height: 260px;
+}
+
+
+
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    top: 10px;
+}
+
+
+@media (max-width: 992px) {
+    .navbar .links {
+        display: none;
+}
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    #dropdown_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    #dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+
+section.hero {
+    display: flex;
+    height: calc(100vh - 120px);
+}
+
+
+.hero-left {
+    flex: 1;
+    background-color: #232027; 
+    padding: 10% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.hero-left p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    margin-bottom: 2rem;
+    position: relative;
+    bottom: 0%;
+}
+
+p .third {
+    font-size: 33px;
+    font-weight: bold;
+}
+
+p .second {
+    font-size: 40px;
+    color: rgb(35, 194, 114);
+    font-weight: bold;
+}
+
+@media (max-width: 992px) {
+    .hero-left p {
+        font-size: 15px;
+        position: relative;
+        bottom: -4%;
+    }
+
+    .hero-left h1 {
+        font-size: 50px;
+        position: relative;
+        bottom: 0%;
+    }
+
+    .hero-left h2 {
+        font-size: 30px;
+        position: relative;
+        bottom: -4%;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-right {
+        width: 70% !important; 
+        max-width: 0px; 
+        margin: 0 auto;
+        height: 2400px;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero-right {
+        width: 0% !important; 
+        max-width: 0px; 
+    }
+}
+
+
+.linkss {
+    position: absolute;
+    display: flex;
+    left: 91%;
+    flex-direction: column;
+    gap: 20px;
+    top: 40%;
+    text-decoration: none;  
+    cursor: pointer;
+}
+
+.linkss i {
+    color: #232027;
+    font-size: larger;
+    transition: color 0.3s, transform 0.2s ease; 
+}
+
+.linkss .git i:hover {
+    color: rgb(216, 107, 80);
+    transform: scale(1.3);
+}
+
+.linkss .fb i:hover {
+    color: rgb(0, 110, 255);
+    transform: scale(1.3);
+}
+
+.linkss .in i:hover {
+    color: rgb(17, 33, 124);
+    transform: scale(1.3);
+}
+
+@media (max-width: 992px) {
+    .linkss {
+        right: 5%;
+        gap: 15px;
+        top: 37%;
+    }
+
+    .linkss i {
+        font-size: 4em;
+    }
+
+    .hero-right {
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+  .linkss {
+    position: fixed ; 
+    right: 10px; 
+    top: auto;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    font-size: 2em;
+    text-decoration: none;
+    margin: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+    .linkss i {
+        font-size: 1em;
+    }
+
+}
+
+
+
+
+
+.icons {
+    writing-mode: vertical-lr;
+    padding-top: 140px;
+    position: absolute;
+    left: 73%;
+    padding-bottom: -1000px;
+}
+
+.html-icon,
+.css-icon,
+.js-icon,
+.py-icon
+{
+    height: 150px;
+    width: 150px;
+    margin-bottom: 85px; 
+}
+
+.sql-icon {
+    height: 150px;
+    width: 150px;
+    margin-top: 45px; 
+}
+
+.java-icon {
+    height: 150px;
+    width: 230px;
+    margin-bottom: 58px; 
+}
+
+
+
+
+.skillset {
+    padding-top: 100px;
+    padding-left: 320px;
+    border-radius: 1em;
+    border: #fff;
+    padding-bottom: 100px;
+}
+
+.skillset p {
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 80px;
+    right: 100px;
+}
+
+.skills {
+    text-align: right; 
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    color: white; 
+    width: 0;
+    transition: width 1.3s ease-in-out;
+    overflow: hidden;
+  }
+
+
+  .html {background-color: #04AA6D; width: 60%;} 
+  .css {background-color: #2196F3; width: 30%;} 
+  .js {background-color: #f44336; width: 10%;} 
+  .python {background-color: #000000; color: black; width: 20%;} 
+  .java {background-color: #0fad44; width: 65%;} 
+  .sql {background-color: #f1753c; width: 40%;}
+
+.container {
+    justify-content: center;
+    text-align: center;
+    width: 50%; 
+    background-color: #ddd; 
+    border: 2px solid #ffffff;
+    border-radius: 2px; 
+    overflow: hidden;
+  }
+
+@media (max-width: 1080px) {
+    .skillset p {
+        font-size: 20px;
+        margin: auto;
+        padding-bottom: 60px;
+    }
+    
+    .skills {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .skillset {
+        padding-left: 50px;
+        padding-bottom: 25px;
+    }
+
+.html-icon,
+.css-icon,
+.js-icon,
+.py-icon
+{
+    height: 90px;
+    width: 90px;
+    margin-bottom: 85px; 
+}
+
+.sql-icon {
+    height: 100px;
+    width: 100px;
+    margin-top: 45px; 
+}
+
+.java-icon {
+    height: 100px;
+    width: 170px;
+    padding-top: 0;
+    margin-bottom: 39px; 
+}
+
+.icons {
+    left: 50%;
+    padding-left: 70px;
+}
+
+}
+
+@media (max-width: 1094px) {
+    .skillset p {
+        font-size: 20px;
+        margin: auto;
+        padding-bottom: 60px;
+    }
+    
+    .skills {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .skillset {
+        padding-left: 250px;
+        padding-bottom: 25px;
+    }
+
+.html-icon,
+.css-icon,
+.js-icon,
+.py-icon
+{
+    height: 90px;
+    width: 90px;
+    margin-bottom: 85px; 
+}
+
+.sql-icon {
+    height: 100px;
+    width: 100px;
+    margin-top: 45px; 
+}
+
+.java-icon {
+    height: 100px;
+    width: 170px;
+    padding-top: 0;
+    margin-bottom: 39px; 
+}
+
+.icons {
+    left: 50%;
+    padding-left: 150px;
+}
+
+}
+
+
+   
+
+@media (max-width: 1000px) {
+    .skillset p {
+        font-size: 20px;
+        margin: auto;
+        padding-bottom: 60px;
+    }
+    
+    .skills {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+
+    .skillset {
+        padding-left: 130px;
+        padding-bottom: 25px;
+    }
+
+.html-icon,
+.css-icon,
+.js-icon,
+.py-icon
+{
+    height: 90px;
+    width: 90px;
+    margin-bottom: 85px; 
+}
+
+.sql-icon {
+    height: 100px;
+    width: 100px;
+    margin-top: 45px; 
+}
+
+.java-icon {
+    height: 100px;
+    width: 170px;
+    padding-top: 0;
+    margin-bottom: 39px; 
+}
+
+.icons {
+    left: 50%;
+    padding-left: 100px;
+}
+
+}
+
+@media (max-width: 600px) {
+    .skillset p {
+        font-size: 20px;
+        margin: auto;
+        padding-bottom: 60px;
+    }
+    
+    .skills {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+
+    .skillset {
+        padding-left: 40px;
+        padding-bottom: 25px;
+    }
+
+.html-icon,
+.css-icon,
+.js-icon,
+.py-icon
+{
+    height: 90px;
+    width: 90px;
+    margin-bottom: 85px; 
+}
+
+.sql-icon {
+    height: 100px;
+    width: 100px;
+    margin-top: 45px; 
+}
+
+.java-icon {
+    height: 100px;
+    width: 170px;
+    padding-top: 0;
+    margin-bottom: 39px; 
+}
+
+.icons {
+    left: 50%;
+    padding-left: 0px;
+}
+
+}
+
+@media (max-width: 500px) {
+    .skillset p {
+        font-size: 20px;
+        margin: auto;
+        padding-bottom: 60px;
+    }
+    
+    .skills {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+
+    .skillset {
+        padding-left: 40px;
+        padding-bottom: 25px;
+    }
+
+.html-icon,
+.css-icon,
+.js-icon,
+.py-icon
+{
+    height: 90px;
+    width: 90px;
+    margin-bottom: 85px; 
+}
+
+.sql-icon {
+    height: 100px;
+    width: 100px;
+    margin-top: 45px; 
+}
+
+.java-icon {
+    height: 100px;
+    width: 170px;
+    padding-top: 0;
+    margin-bottom: 39px; 
+}
+
+.icons {
+    left: 50%;
+    padding-left: 0px;
+}
+}
+
+
+
+#myBtn {
+    display: none; 
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 10px;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out; 
+}
+
+#myBtn.show {
+    display: block; 
+    opacity: 100%;
+}
+
+#myBtn:hover {
+    background-color: #6b6b6b;
+}
+
+@media (max-width: 992px) {
+    #myBtn {
+    display: none; 
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 10px;
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+    }
+}
+
