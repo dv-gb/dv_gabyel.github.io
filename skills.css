@@ -17,7 +17,7 @@
     object-fit: contain; 
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 992px) {
     .profilepic {
         display: none;
     }
@@ -307,7 +307,7 @@ p .second {
 @media (max-width: 992px) {
   .linkss {
     position: fixed ; 
-    right: -30px; 
+    right: -23px; 
     top: auto;
     bottom: 30px;
     display: flex;
@@ -330,7 +330,7 @@ p .second {
 @media (max-width: 600px) {
     .linkss {
       position: fixed ; 
-      right: 0px; 
+      right: 4px; 
       top: auto;
       bottom: 30px;
       display: flex;
