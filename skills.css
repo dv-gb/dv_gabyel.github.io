@@ -411,12 +411,12 @@ p .second {
   }
 
 
-  .html {background-color: #04AA6D; width: 60%;} 
-  .css {background-color: #2196F3; width: 30%;} 
+  .html {background-color: #04AA6D; width: 40%;} 
+  .css {background-color: #2196F3; width: 20%;} 
   .js {background-color: #f44336; width: 10%;} 
-  .python {background-color: #000000; color: black; width: 20%;} 
-  .java {background-color: #0fad44; width: 65%;} 
-  .sql {background-color: #f1753c; width: 40%;}
+  .python {background-color: #000000; color: black; width: 10%;} 
+  .java {background-color: #0fad44; width: 40%;} 
+  .sql {background-color: #f1753c; width: 20%;}
 
 .container {
     justify-content: center;
