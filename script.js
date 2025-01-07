@@ -50,12 +50,12 @@ function handleScroll() {
 
 
 skillBars.forEach(skill => {
-    const width = skill.classList.contains('html') ? '60%' :
-                  skill.classList.contains('css') ? '30%' :
+    const width = skill.classList.contains('html') ? '40%' :
+                  skill.classList.contains('css') ? '20%' :
                   skill.classList.contains('js') ? '10%' :
-                  skill.classList.contains('python') ? '20%' :
-                  skill.classList.contains('java') ? '65%' :
-                  skill.classList.contains('sql') ? '40%' : '0%';
+                  skill.classList.contains('python') ? '10%' :
+                  skill.classList.contains('java') ? '45%' :
+                  skill.classList.contains('sql') ? '20%' : '0%';
     skill.dataset.width = width; 
     skill.style.width = '0'; 
 });
